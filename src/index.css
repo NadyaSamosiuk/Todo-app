@@ -1,13 +1,115 @@
 body {
+ 
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+ 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#root{
+  background-color: rgb(151, 180, 255);
+}
+
+.app{
+  width: 60%;
+  max-width: 1280px;
+  margin: 0 auto; 
+ 
+}
+.app__title, 
+.todo__create{
+  display: flex;
+  justify-content: center;
+}
+.app__item{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(4, 25, 85);
+  background-image: url('list1.png');
+  background-repeat: no-repeat;
+  background-position: 80px 30px;
+
+  border-radius: 10px 10px 0 0px;
+  box-shadow: inset 0 0 10px rgb(235, 6, 255);
+  border: 1px solid rgb(235, 6, 255);
+  
+}
+.app__title{
+  font-family: 'Otomanopee One', sans-serif;
+  font-weight: bold;
+  font-size: 64px;
+  color: aliceblue;
+}
+.todo__create{
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+
+.todo__input__value{
+  width: 50%;
+  margin-right: 20px;
+  border-radius: 5px;
+  padding-left: 20px;
+}
+
+.todo__list,
+.todo__create{
+  background-color: rgb(52, 80, 161);
+}
+.todo__list{
+  height: 380px;
+  padding: 1rem;
+  overflow-y: auto;
+  direction: ltr;
+  padding-bottom: 20px;
+  
+}
+.todo__list::-webkit-scrollbar {
+  width: 10px;
+}
+.todo__list::-webkit-scrollbar-track {
+  border: 6px solid rgba(0,0,0,0.2);
+}
+
+.todo__list::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+  border: 2px solid rgba(17, 4, 63, 0.836);
+}
+
+
+.todo__item-done{
+  text-decoration: line-through;
+}
+
+.todo__items li{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  color: azure;
+  margin-bottom: 5px;
+}
+.todo__item__checkbox{
+  transform:scale(1.5)
+}
+.todo__item__description{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.footer{
+  background-color: rgb(4, 25, 85);
+  height: 60px;
+}
+
